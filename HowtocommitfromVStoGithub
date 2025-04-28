@@ -1,0 +1,91 @@
+**Title:** How to Push a Python Project to GitHub from VS Code (Without Signing In)
+
+---
+
+## Step-by-Step Guide
+
+### 1. Open Your Project in VS Code
+- Open your local Python project folder using Visual Studio Code.
+
+### 2. Initialize Git
+Open the terminal in VS Code and run:
+
+```bash
+git init
+```
+
+This will turn your project folder into a Git repository.
+
+### 3. Configure Git (If Needed)
+Set your username and email for Git commits:
+
+```bash
+git config --global user.name "YourUsername"
+git config --global user.email "youremail@example.com"
+```
+
+### 4. Stage Your Files
+Add all project files to Git's staging area:
+
+```bash
+git add .
+```
+
+### 5. Commit Your Changes
+Create your first commit:
+
+```bash
+git commit -m "First commit"
+```
+
+### 6. Create a Repository on GitHub
+- Go to [GitHub](https://github.com/) and create a new repository.
+- Do NOT check the "Initialize this repository with a README" option.
+
+### 7. Link Your Local Repository to GitHub
+Add the remote URL (replace with your own repo URL):
+
+```bash
+git remote add origin https://github.com/yourusername/your-repo-name.git
+```
+
+### 8. (Optional) Pull Before Push
+If there is any file already present on GitHub (like README), you must pull first:
+
+```bash
+git pull origin main --allow-unrelated-histories
+```
+
+### 9. Push Your Project to GitHub
+Push your local commits to GitHub:
+
+```bash
+git push -u origin main
+```
+
+### 10. Authentication
+When pushing or pulling, GitHub will prompt you for authentication:
+- Enter your GitHub **username**.
+- Instead of your password, enter your **Personal Access Token (PAT)**.
+
+**Note:** GitHub no longer accepts account passwords for authentication; you must use a PAT.
+
+---
+
+## Quick Command Summary
+
+```bash
+git init
+git config --global user.name "YourUsername"
+git config --global user.email "youremail@example.com"
+git add .
+git commit -m "First commit"
+git remote add origin https://github.com/yourusername/your-repo-name.git
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+```
+
+---
+
+**Done!** 🚀 Your Python project is now uploaded to GitHub.
+
