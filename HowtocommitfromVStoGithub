@@ -89,3 +89,42 @@ git push -u origin main
 
 **Done!** 🚀 Your Python project is now uploaded to GitHub.
 
+## Now From New branch to master branch
+✅ Steps: Create Branch → Work → Push → Merge to Main
+🧱 1. Create a New Branch & Switch to It
+
+git checkout -b new-feature
+Replace new-feature with whatever name you want (e.g., salary-module, dev-logic, and
+
+🛠️ 2. Do your work in this branch
+
+
+git add .
+git commit -m "Added feature in new-feature branch"
+
+
+🚀 3. Put
+
+git push -u origin new-feature
+The -u sets upstream so future git pushwith
+
+🔁 4. Switch to main and merge the branch
+
+git checkout main
+git pull origin main          # To get latest main
+git merge new-feature         # Merge your branch into main
+
+
+📤 5. Push updated main to GitHub
+
+git push origin main
+
+
+🧼 (Optional) 6. Delete the feature branch
+Locally:
+
+git branch -d new-feature
+
+On GitHub:
+
+git push origin --delete new-feature
