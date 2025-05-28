@@ -5,7 +5,7 @@ import sys
 import random
 from enum import Enum
 
-class RPS(Enum):
+class RPS(Enum): # class is used to create a new user-defined class. Enum is a class in python that allows you to create enumerations, which are a set of symbolic names bound to unique constant values.
     ROCK = 1
     PAPER = 2
     SCISSORS = 3
@@ -27,7 +27,7 @@ Your = int(YourChoice)
 if Your < 1 or Your > 3:
     sys.exit("Invalid choice! You must enter 1,2 or 3.")
 
-ComputerChoice = random.choice("123")
+ComputerChoice = random.choice("123") # random.choice() is used to select a random element from a non-empty sequence.
 Computer = int(ComputerChoice)
 
 # print(RPS(Your))

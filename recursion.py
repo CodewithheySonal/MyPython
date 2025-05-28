@@ -33,4 +33,16 @@ def add_one(num):
 my_newtotal = add_one(0) 
 print(my_newtotal)
 
-# Let's use this in rps game now
+# Let's use this in rps game now 
+# Below are the example i'm  trying for recursion.
+
+#factorial of a number using recursion.
+
+n = int(input("Enter a number to find the factorial: "))
+def fac(n):
+    if n == 0:
+        return 1
+    else:
+        return n*fac(n-1)
+
+print(f"The factorial of {n} is {fac(n)}")

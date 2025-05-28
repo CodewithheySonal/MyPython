@@ -1,7 +1,7 @@
 # functions to be used in the main.py file
 
-# def hello():
-#     print("Hello, World!")
+def hello():
+    print("Hello, World!")
 
 # hello()
 
